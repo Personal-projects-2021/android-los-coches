@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.loscochesaguazul">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LosCochesAguazul">
+        <activity
+            android:name=".UserMarkSelectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OurServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserServiceSelectActivity"
+            android:exported="false"
+            android:label="@string/title_activity_user_service_select"
+            android:theme="@style/Theme.LosCochesAguazul.NoActionBar" />
+        <activity
+            android:name=".UserAppointmentShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserAppointmentEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserAppointmentIndexActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserAppointmentCreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserVehicleShowActivity"
+            android:exported="false"
+            android:label="@string/title_activity_user_vehicle_show"
+            android:theme="@style/Theme.LosCochesAguazul.NoActionBar" />
+        <activity
+            android:name=".UserVehicleIndexActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserVehicleCreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserVehicleSelectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserCreateVehicleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSelectVehicleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userAppointments.SelectVehicleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

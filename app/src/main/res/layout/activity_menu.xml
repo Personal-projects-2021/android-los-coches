@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="@string/label_welcome" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnCreateAppointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MenuPadding"
+                android:drawableLeft="@drawable/ic_add_appointment"
+                android:background="@color/colorPrimary"
+                android:text="@string/btn_reserve_appointment" />
+
+            <Button
+                android:id="@+id/btnReadAppointments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MenuPadding"
+                android:drawableLeft="@drawable/ic_lists_appointments"
+                android:background="@color/colorPrimary"
+                android:text="@string/btn_watch_appointments" />
+
+            <Button
+                android:id="@+id/btnCreateVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MenuPadding"
+                android:drawableLeft="@drawable/ic_register_vehicle"
+                android:background="@color/colorPrimary"
+                android:text="@string/btn_register_vehicle"/>
+
+            <Button
+                android:id="@+id/btnReadVehicles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MenuPadding"
+                android:drawableLeft="@drawable/ic_list_cars"
+                android:background="@color/colorPrimary"
+                android:text="@string/btn_vehicles_register"/>
+
+            <Button
+                android:id="@+id/btnOurService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MenuPadding"
+                android:drawableLeft="@drawable/ic_car_wash"
+                android:background="@color/colorPrimary"
+                android:text="@string/btn_our_services" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btnAccount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="5dp"
+                android:paddingLeft="45dp"
+                android:gravity="left|center_vertical"
+                android:drawableLeft="@drawable/ic_account"
+                android:background="@color/colorPrimary"
+                android:text="@string/btn_account" />
+
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:paddingLeft="45dp"
+                android:gravity="left|center_vertical"
+                android:drawableLeft="@drawable/ic_logout"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/btn_logout" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>
